@@ -1,0 +1,53 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    width: 50%;
+  }
+
+ .containerImage{
+    height: 80%;
+  }
+
+  .containerImage:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .searchCandidate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-required{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn{
+      margin-left: 10vw;
+      margin-right: 10vw;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      height: 5vh;
+      width: 5vw;
+  }
+
+  .btn:hover{
+      cursor: pointer;
+      transform: scale(1.2);
+  }
