@@ -45,6 +45,11 @@ function Cards() {
                     <img src="https://static.thenounproject.com/png/3134345-200.png" style={{ width: '5vw', height: '5vh' }} />
                 </div>
             </div>
+            <div className="btn-required">
+            <button className="btn" onClick={()=> {history.push(`/Selected`)}}>Selected Candidate</button>
+            <button className="btn" onClick={()=> {history.push(`/Rejected`)}}>Rejected Candidate</button>
+            
+        </div>
             
             {user.map((obj, key) => (
                 <div className="card" key={key}>
@@ -65,11 +70,7 @@ function Cards() {
 
        
 
-        <div className="btn-required">
-            <button className="btn" onClick={()=> {history.push(`/Selected`)}}>Selected Candidate</button>
-            <button className="btn" onClick={()=> {history.push(`/Rejected`)}}>Rejected Candidate</button>
-            
-        </div>
+       
     </div>
 
     )
