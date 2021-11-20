@@ -4,13 +4,15 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
+
 function Cards() {
     const [user, getUser] = useState([]);
     const [search, getSeach] = useState("");
     const history = useHistory();
     useEffect(async () => {
-        console.log("data")
+       
         let data = await axios.get("https://s3-ap-southeast-1.amazonaws.com/he-public-data/users49b8675.json");
+        console.log("data"+data)
         console.log(data.data)
         getUser(data.data);
         console.log(user);
@@ -43,6 +45,7 @@ function Cards() {
                     <img src="https://static.thenounproject.com/png/3134345-200.png" style={{ width: '5vw', height: '5vh' }} />
                 </div>
             </div>
+            
             {user.map((obj, key) => (
                 <div className="card" key={key}>
                     <div className="container">
